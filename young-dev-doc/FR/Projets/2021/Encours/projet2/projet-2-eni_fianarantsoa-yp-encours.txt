@@ -1,0 +1,30 @@
+Projet 2  : Gérer le réseau internet pour les étudiants de l'ENI
+-----------------------------------------------------------------
+
+Description du projet:
+   Le réseau internet à l'ENI ne satisfaisait pas les besoins de l'étudiants de l'établissement.
+ Donc pour résoudre le problème, le projet Young Professional a affecté l'équipe 4 et
+ l'équipe 6 pour trouver des solutions adéquats afin que 50% des étudiants puissent 
+ connecter sur internet. Ces équipes vont utilisés les ressources disponible à l'ENI et faire 
+ une demande pour des nouvelles ressources.
+
+
+Propriétaire du projet: la communauté Young Professional
+
+Cible du projet:  Etudiants de l'ENI Fianarantsoa
+
+Objectif du projet:
+
+   Au moins 50% des étudiants puissent se connecter sur internet.
+
+Répartition des tâches:
+   Equipe 4 : Assure le plannification, la gestion, la maintenance et le déployement 
+                des équipements réseau dédier pour les étudiants de l'ENI
+
+   Equipe 6 : Gérer les utilisateurs et assurer la sécurité du réseau LAN
+
+Remarques sur les tâches:
+   - L'équipe  4 et 6 devront se renseigner au près de l'établissement sur les équipements
+     réseau dédier pour les étudiants de l'ENI
+
+Topologie du réseau

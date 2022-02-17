@@ -1,0 +1,33 @@
+Projet 1  : Site web pour le projet YOUNG PROFESSIONAL
+------------------------------------------------------
+
+Description du projet:
+	
+   Pour assurer la visibilité du projet Young Professional, les équipes 1, 2 et 3 du projet 
+ vont concevoir un site web dynamique avec des technologies de leur choix qui 
+ vont contenir les composants suivants : Actualités, Documentations,Projets, Equipes,
+ Evenements,Activités, Portfolio, Tutoriels, A propos,Inscription,Réseau RHI...
+
+
+Propriétaire du projet: 
+   La communauté Young Professional
+
+
+Objectif du projet:
+   Assurer la visibilité du projet Young Professional afin d'aider les membres et les visiteurs 
+ à suivre les activités et l'évolution du projet.
+
+
+Répartition des tâches:
+   Equipe 1 :Travail sur le côté backend du projet
+   Equipe 2 : Travaile sur le côté frontend du projet
+   Equipe 3 : Assurer le déployement du site web
+
+
+Remarques sur les tâches:
+ - L'équipe  1 et 2 devront faire un contrat de service pour assurer la compatibilité
+  des api qui vont être consumé par un client
+ - L'équipe 3 doit se renseigner au près de l'équipe 1 et 2 sur les technologies qu'ils
+  utilisents afin d'assurer une déployement rapide et sans problème lors de services
+ - L'équipe 3 doit se renseigner sur les hébergeurs favorables 
+
