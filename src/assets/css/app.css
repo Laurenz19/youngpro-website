@@ -1,0 +1,11 @@
+
+body{
+    top: -3%;
+    position: absolute;
+    margin: 0%;
+    width: 100%;
+}
+
+#app{
+    margin: inherit;
+}
