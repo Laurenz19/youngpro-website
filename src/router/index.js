@@ -1,11 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Index from '../views/front-office/Index.vue'
+import Front_Office from '../views/front-office/Index.vue'
+import Back_Office from '../views/back-office/Index.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'Index',
-    component: Index
+    name: 'Front',
+    component: Front_Office
+  },
+  {
+    path: '/admin',
+    name: 'Back',
+    component: Back_Office
   }
 ]
 

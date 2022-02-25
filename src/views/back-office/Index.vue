@@ -1,25 +1,27 @@
 <template>
-  <div class="index">
+   <div class="index">
    <app-header>
      <template v-slot:header_nav_content>
-       <ul>
-        <li>Home</li>
-        <li>About us</li>
-        <li>Our team</li>
-        <li>Forum</li>
-        <li>Contact</li>
-      </ul>
+      <div class="user_connected">
+        Laurenzio
+      </div>
      </template>
    </app-header>
-   <main id="front">
-     <div id="young-pro">
-       young pro introduction
-     </div>
-     <div id="content">
-       my content
-     </div>
-
+   <main id="back">
+     <nav class="nav_left">
+      <div id="user">
+        
+      </div>
+      <hr> 
+      <div id="menus">
+        
+      </div>
+     </nav>
+    <div id="content">
+      hello
+    </div>
    </main>
+  
   <app-footer/>
   </div>
 </template>
@@ -28,7 +30,7 @@
 import Footer from '../../components/Footer.vue'
 import Header from '../../components/Header.vue'
 export default {
-  name: 'Front_Office',
+  name: 'Back_Office',
   components: {
     'app-footer':Footer,
     'app-header':Header
@@ -38,4 +40,8 @@ export default {
 
 <style>
   @import url('../../assets/css/front.css');
+</style>
+
+<style scoped>
+  @import url('../../assets/css/back.css');
 </style>
