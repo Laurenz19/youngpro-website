@@ -1,6 +1,9 @@
 <template>
   <div class="index">
    <app-header>
+      <template v-slot:title>
+       <div id="title">Young Professional</div>
+     </template>
      <template v-slot:header_nav_content>
        <ul>
         <li>Home</li>
@@ -36,6 +39,6 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   @import url('../../assets/css/front.css');
 </style>

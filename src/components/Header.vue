@@ -1,6 +1,8 @@
 <template>
     <header>
-     <div id="title">Young Professional</div>
+     <slot name="title">
+
+     </slot>   
      <nav id="app-nav">
          <slot name="header_nav_content">
 

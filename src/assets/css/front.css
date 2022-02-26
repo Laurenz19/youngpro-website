@@ -27,6 +27,8 @@ header {
     background-color: white;
     margin-top: 1%;
     padding: 10px 0;
+    color: #001f3f;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
 }
 
 main#front{
@@ -36,7 +38,7 @@ main#front{
 
 footer{
     /*grid-area: footer;*/
-    background-color: rgb(42, 43, 43);
+    background-color: #001325;
     padding: 15px;
     color: rgb(170, 170, 170);
 }
@@ -58,7 +60,7 @@ header nav{
 #app-nav li{
     list-style: none;
     display: inline-block;
-    margin:0 15px;
+    margin:0 9px;
     font-weight: 500;
 }
 
