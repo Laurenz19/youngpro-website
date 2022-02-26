@@ -28,7 +28,7 @@ header {
     margin-top: 1%;
     padding: 10px 0;
     color: #001f3f;
-    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+    box-shadow: 3px 3px 10px rgba(141, 141, 141, 0.1);
 }
 
 main#front{
@@ -38,7 +38,7 @@ main#front{
 
 footer{
     /*grid-area: footer;*/
-    background-color: #001325;
+    background-color: #001f3f;
     padding: 15px;
     color: rgb(170, 170, 170);
 }

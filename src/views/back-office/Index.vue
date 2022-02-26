@@ -16,7 +16,7 @@
     
        <nav class="nav_left" v-if="showbars">
        <ul>
-         <li>  
+         <li class="active">  
          <fa :icon="['fa', 'house']" size="xs"/>
          Dashboard
          </li>

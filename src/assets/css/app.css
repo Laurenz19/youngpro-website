@@ -4,6 +4,7 @@ body{
     position: absolute;
     margin: 0%;
     width: 100%;
+    background-color: white;
 }
 
 #app{
