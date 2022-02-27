@@ -84,7 +84,7 @@ main.noSidebar{
 }
 .nav_left ul li{
     list-style: none;
-    margin:5px 15px 5px 0px;
+    /*margin:5px 15px 5px 0px;*/
     padding: 15px 10px;
     cursor: pointer;
 }
@@ -121,6 +121,211 @@ main.noSidebar{
         background-color: aqua;
     }
     
+}
+
+@media only screen and (max-width: 900px) {
+
+    main.withSidebar{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-auto-rows: minmax(123px, auto);
+        grid-gap:2px;
+        grid-template-areas: 
+        "nav_left content content content content content content content content content content content"
+        "nav_left content content content content content content content content content content content"
+        "nav_left content content content content content content content content content content content"
+        "nav_left content content content content content content content content content content content"
+        "nav_left content content content content content content content content content content content"
+        ;
+        margin: 3px 0;
+    }
+
+    .nav_left ul li svg{
+        margin: 0px !important;
+        width: 100%;
+        height: 13px;
+    }
+
+    .nav_left ul li{
+       border-radius: 10px;
+       padding: 10px !important;
+       margin: 10px !important;
+     }
+
+     .nav_left ul li:hover{
+        border: 2px solid #001f3f !important;
+        border-radius: 10px;
+        color: white;
+        background-color: #001f3f !important;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+      }
+
+      .nav_left ul li.active{
+        border: 2px solid #001f3f !important;
+        border-radius: 10px;
+        color: white !important;
+        background-color: #001f3f !important;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+     }
+
+     .nav_left ul li span{
+        display: none;
+      }
+      .nav_left ul li span.show{
+        display: block;
+        position: absolute;
+        left: 80px;
+        color: black;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+        font-weight: 200;
+        padding: 7px;
+        font-size: 14px !important;
+      }
+    
+}
+
+@media only screen and (max-width:700px){
+    .nav_left ul li{
+        border-radius: 10px;
+        padding: 10px !important;
+        margin: 5px !important;
+    }
+    .nav_left ul li span.show{
+        display: block;
+        position: absolute;
+        left: 60px;
+        color: black;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+        font-weight: 200;
+        padding: 7px;
+        font-size: 14px !important;
+      }
+}
+
+@media only screen and (max-width:600px){
+    .nav_left ul li{
+        border-radius: 10px;
+        padding: 10px !important;
+        margin: 2px 1px !important;
+      }
+
+      .nav_left ul li span.show{
+        display: block;
+        position: absolute;
+        left: 50px;
+        color: black;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+        font-weight: 200;
+        padding: 7px;
+        font-size: 14px !important;
+      }
+}
+
+@media only screen and (max-width:500px){
+    main.withSidebar{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-auto-rows: minmax(40px, auto);
+        grid-gap:2px;
+        grid-template-areas: 
+        "nav_left nav_left nav_left nav_left nav_left nav_left nav_left nav_left nav_left nav_left nav_left nav_left"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        ;
+        margin: 3px 0;
+    }
+
+    .nav_left ul li{
+       display: inline-block;
+    }
+
+    .nav_left ul{
+       margin: 2px auto;
+       width: 50%;
+     }
+
+     .togglebars_icon{
+       display: none;
+    }
+
+    .nav_left ul li span.show{
+        display: none !important;
+      }
+
+      div#title{
+        width: 100%;
+        text-align: center;
+        position: relative;
+        top: 10px;
+     }
+ 
+     #app-nav{
+         display: none;
+     }
+}
+
+@media only screen and (max-width:435px){
+    .nav_left ul{
+        margin: 2px auto;
+        width: 55%;
+      }
+
+    footer ul{
+       display: none;
+    } 
+
+    footer::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
+    footer #copyright-info{
+        width: 100% !important;
+        left: 0% !important;
+        margin: 30px auto 15px auto;
+    }
+    
+}
+
+@media only screen and (max-width:400px){
+    .nav_left ul{
+        margin: 2px auto;
+        width: 60%;
+      }
+}
+@media only screen and (max-width:305px){
+    .nav_left ul{
+        margin: 2px auto;
+        width: 95%;
+      }
 }
 
 
