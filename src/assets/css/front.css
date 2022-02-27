@@ -91,7 +91,138 @@ footer ul li{
     margin: 0 5px;
 }
 
+/* Footer Responsive*/
+
+@media only screen and (max-width: 1050px) {
+    footer ul{
+        float: left;
+        left: 40%;
+        margin: 0% auto;
+        top:5px
+    }
+
+    footer::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    footer #copyright-info{
+        position: none !important;
+        width: 50%;
+        left: 17%;
+        margin: 30px auto 15px auto;
+    }
+    
+}
+
+@media only screen and (max-width: 1025px) {
+    footer #copyright-info{
+        position: none !important;
+        width: 50%;
+        left: 15%;
+        margin: 30px auto 15px auto;
+    }
+    
+}
+
+@media only screen and (max-width: 915px) {
+    footer #copyright-info{
+        position: none !important;
+        width: 50%;
+        left: 12.5%;
+        margin: 30px auto 15px auto;
+    }
+    
+}
+
+@media only screen and (max-width: 805px) {
+    footer #copyright-info{
+        position: none !important;
+        width: 60%;
+        left: 10% !important;
+        margin: 30px auto 15px auto;
+    }
+    
+}
+
+@media only screen and (max-width: 750px) {
+    footer ul{
+        float: left;
+        left: 35% !important;
+        margin: 0% auto;
+        top:5px
+    } 
+
+    footer::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
+    footer #copyright-info{
+        position: none !important;
+        width: 60%;
+        left: 2% !important;
+        margin: 30px auto 15px auto;
+    }
+}
+
+@media only screen and (max-width: 695px) {
+    footer #copyright-info{
+        width: 50%;
+        margin: 30px auto 15px auto;
+        text-align: center;
+    }
+
+    header nav{
+        display: inline-block;
+        position: relative;
+        left: 25%;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    footer #copyright-info{
+        width: 50%;
+        margin: 30px auto 15px auto;
+        text-align: center;
+        font-size: 13px;
+    }
+    
+}
+
+@media only screen and (max-width: 500px) {
+    footer ul{
+        float: left;
+        left: 30%;
+        margin: 0% auto;
+        top:5px
+    }  
+    footer::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    header nav{
+        display: inline-block;
+        position: relative;
+        left: 10%;
+    }
+
+    footer #copyright-info{
+        width: 40%;
+        margin: 30px auto 15px auto;
+        text-align: center;
+        font-size: 13px;
+        left: 5% !important;
+    }
+}
+
 /*the main website's shape*/
+
 
 
 

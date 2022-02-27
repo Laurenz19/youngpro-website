@@ -14,34 +14,7 @@
    </app-header>
    <main id="back" class="withSidebar" ref="main_content">
     
-       <nav class="nav_left" v-if="showbars">
-       <ul>
-         <li class="active">  
-         <fa :icon="['fa', 'house']" size="xs"/>
-         Dashboard
-         </li>
-         <li>
-         <fa :icon="['fa', 'user-tie']" size="xs"/> 
-           Profiles
-         </li>
-         <li>
-         <fa :icon="['fa', 'code']" size="xs"/>
-           Configurations
-         </li>
-         <li>
-         <fa :icon="['fa', 'user']" size="xs"/> 
-           User
-         </li> 
-         <li>
-          <fa :icon="['fa', 'users']" size="xs"/> 
-           Member
-          </li> 
-         <li>
-          <fa :icon="['fa', 'house']" size="xs"/>
-          Article
-         </li> 
-       </ul>
-     </nav> 
+    <app-sidebar :showbars="showbars" :data="menu"/>   
     <div id="content">
       hello
     </div>
@@ -55,11 +28,25 @@
 import { ref } from '@vue/reactivity'
 import Footer from '../../components/Footer.vue'
 import Header from '../../components/Header.vue'
+import Sidebar from '../../components/Sidebar.vue'
 export default {
   name: 'Back_Office',
   components: {
     'app-footer':Footer,
-    'app-header':Header
+    'app-header':Header,
+    'app-sidebar':Sidebar
+  },
+  data(){
+    return{
+      menu:[
+        {label:"Dashboard", icon:['fa', 'house'], iconsize:'xs', routeName:''},
+        {label:"Profile", icon:['fa', 'user-tie'], iconsize:'xs', routeName:''},
+        {label:"Setting up", icon:['fa', 'code'], iconsize:'xs', routeName:''},
+        {label:"Users", icon:['fa', 'user'], iconsize:'xs', routeName:''},
+        {label:"Members", icon:['fa', 'users'], iconsize:'xs', routeName:''},
+        {label:"Article", icon:['fa', 'house'], iconsize:'xs', routeName:''},
+      ]
+    }
   },
   setup(){
     let showbars = ref(true)
