@@ -6,7 +6,7 @@ export default ({
           {label:"Setting up", icon:['fa', 'code'], iconsize:'xs', routeName:'SettingUp'},
           {label:"Users", icon:['fa', 'user'], iconsize:'xs', routeName:'User'},
           {label:"Members", icon:['fa', 'users'], iconsize:'xs', routeName:'Member'},
-          {label:"Article", icon:['fa', 'house'], iconsize:'xs', routeName:'Article'},
+          {label:"Article", icon:['fa', 'newspaper'], iconsize:'xs', routeName:'Article'},
           ]
     },
     getters:{
