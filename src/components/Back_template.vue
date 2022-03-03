@@ -15,9 +15,11 @@
    <main id="back" class="withSidebar" ref="main_content">
     
     <app-sidebar :showbars="showbars" :data="menu"/>
-    <slot name="content">
+    <div id="content">
+      <slot name="content">
     
-    </slot>   
+      </slot>   
+    </div>
    </main>
   
   <app-footer/>

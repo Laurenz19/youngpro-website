@@ -2,7 +2,9 @@
     <div>
         <app-template :menu="menu">
             <template v-slot:content>
-                <h1>Setting Up</h1>
+             <div>
+                 
+             </div>
             </template>
         </app-template>
     </div>
@@ -28,3 +30,7 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+@import url('../../assets/css/content.css');
+</style>
