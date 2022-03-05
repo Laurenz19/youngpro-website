@@ -38,7 +38,7 @@ main#front{
 
 footer{
     /*grid-area: footer;*/
-    background-color: #001f3f;
+    background-image: linear-gradient(to right top, #071832, #092346, #0a2f5b, #083b70, #024887);
     padding: 15px;
     color: rgb(170, 170, 170);
 }

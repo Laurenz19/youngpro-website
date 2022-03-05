@@ -153,6 +153,61 @@ main.noSidebar{
     margin: 0px !important;
 }*/
 
+.content-header{
+    background-image: linear-gradient(to right top, #071832, #092346, #0a2f5b, #083b70, #024887);
+    height: 115px;
+    border: 1px;
+    border-radius: 0 0 5px 5px;
+}
+
+.content-header span{
+    color: #fff;
+    position: relative;
+    left: 15px;
+    top: 18px;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.content-header div#bulle div:first-child{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    position: absolute;
+    left: 90%;
+    display: inline-block;
+    top:25px
+}
+.content-header div#bulle div:last-child{
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 100px;
+    position: absolute;
+    left: 92%;
+    top: 90px;
+}
+
+#main-content{
+    position: relative;
+    width: 99%;
+    margin: 0 auto;
+
+}
+
+.main-content{
+    background-color: white;
+    box-shadow: 3px 3px 10px rgba(141, 141, 141, 0.1);
+    border-radius: 10px;
+    height: 550px;
+    width: 100%;
+    position: absolute;
+    top: -50px;
+    display: block;
+}
+
 @media only screen and (max-width: 695px) {
     div.user_connected{
         position: relative;

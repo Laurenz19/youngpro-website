@@ -2,8 +2,8 @@
     <div>
         <app-template :menu="menu">
             <template v-slot:content>
-             <div>
-                 
+             <div class="main-content">
+
              </div>
             </template>
         </app-template>

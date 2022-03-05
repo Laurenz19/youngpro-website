@@ -16,9 +16,19 @@
     
     <app-sidebar :showbars="showbars" :data="menu"/>
     <div id="content">
-      <slot name="content">
+      <div class="content-header">
+             <span>{{current_route}}</span>
+             <div id="bulle">
+               <div></div>
+               <div></div>
+             </div>  
+             </div>
+             <div id="main-content">
+                <slot name="content">
     
-      </slot>   
+                </slot>
+             </div>
+        
     </div>
    </main>
   
@@ -27,7 +37,9 @@
 </template>
 
 <script>
-import { ref } from '@vue/reactivity'
+import { computed, ref } from '@vue/reactivity'
+import { useRoute } from 'vue-router';
+
 import Footer from './Footer.vue'
 import Header from './Header.vue'
 import Sidebar from './Sidebar.vue'
@@ -44,6 +56,10 @@ export default {
   setup(){
     let showbars = ref(true)
     let main_content = ref(null)
+    
+    const current_route = computed(()=>{
+      return useRoute().name
+    })
 
     let toggleMenu = ()=>{
        if(showbars.value == false){
@@ -57,7 +73,7 @@ export default {
       showbars.value = ! showbars.value
     }
     return{
-      showbars, toggleMenu, main_content
+      showbars, toggleMenu, main_content, current_route
     }
   }
 }

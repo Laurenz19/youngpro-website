@@ -43,7 +43,7 @@ const routes = [
   },
   {
     path: '/admin/setting-up',
-    name: 'SettingUp',
+    name: 'Setting-up',
     component: SettingUp
   },
   {
