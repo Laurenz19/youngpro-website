@@ -1,18 +1,20 @@
 <template>
   <div class="index">
-   <header>
-     <div id="title">Young Professional</div>
-     <nav id="app-nav">
-      <ul>
+   <app-header>
+      <template v-slot:title>
+       <div id="title">Young Professional</div>
+     </template>
+     <template v-slot:header_nav_content>
+       <ul>
         <li>Home</li>
-        <li>About</li>
+        <li>About us</li>
         <li>Our team</li>
         <li>Forum</li>
         <li>Contact</li>
       </ul>
-     </nav>
-   </header>
-   <main>
+     </template>
+   </app-header>
+   <main id="front">
      <div id="young-pro">
        young pro introduction
      </div>
@@ -27,14 +29,16 @@
 
 <script>
 import Footer from '../../components/Footer.vue'
+import Header from '../../components/Header.vue'
 export default {
-  name: 'Index',
+  name: 'Front_Office',
   components: {
-    'app-footer':Footer
+    'app-footer':Footer,
+    'app-header':Header
   }
 }
 </script>
 
-<style>
+<style scoped>
   @import url('../../assets/css/front.css');
 </style>

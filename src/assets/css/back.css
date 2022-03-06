@@ -1,0 +1,473 @@
+
+/**Integration back-office**/
+/*Header*/
+#app-nav{
+    width: 25%;
+}
+div.user_connected{
+    position: relative;
+    left: 50%;
+    width: 20%;
+    background-color: aqua;
+}
+
+div#title{
+    font-size: 17px;
+    margin:14px 1%;
+    color: #001f3f;
+}
+/*SideBar*/
+nav.nav_left{
+    grid-area: nav_left;
+    background-color: white;
+    box-shadow: 3px 3px 10px rgba(141, 141, 141, 0.1);
+   /* animation: smoothBar 2s ease; */
+}
+
+div#content{
+    grid-area: content;
+    background-color: rgb(245, 243, 243);
+}
+
+main.withSidebar{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: minmax(123px, auto);
+    grid-gap:2px;
+    grid-template-areas: 
+    "nav_left content content content content content content"
+    "nav_left content content content content content content"
+    "nav_left content content content content content content"
+    "nav_left content content content content content content"
+    "nav_left content content content content content content"
+    ;
+    margin: 3px 0;
+}
+
+main.noSidebar{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(123px, auto);
+    grid-gap:2px;
+    grid-template-areas: 
+    "content content content content content content"
+    "content content content content content content"
+    "content content content content content content"
+    "content content content content content content"
+    "content content content content content content"
+    ;
+    margin: 3px 0;
+}
+
+.togglebars_icon{
+    position: relative;
+    left: 2%;
+    cursor: pointer;
+    width: 30px;
+}
+
+@keyframes smoothBar {
+    0%{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(0px); 
+    }
+}
+.nav_left ul{
+    padding: 0px;
+}
+.nav_left ul li{
+   list-style: none;
+}
+.nav_left ul li a{
+    display: block;
+    text-decoration: none;
+    color: #001f3f;
+    cursor: pointer;
+    padding: 13px;
+ }
+
+ .nav_left ul li a:hover{
+    background-color: rgba(253, 251, 251, 0.774);
+    border-radius: 0px 20px 20px 0px;
+    color: #001f3f;
+    font-weight: bold;
+ }
+
+ .nav_left ul li svg{
+    margin: 0 2px;
+    width: 14%;
+}
+
+.nav_left ul li.active svg{
+    margin: 0px !important;
+}
+
+.nav_left ul li a.router-link-exact-active{
+    /*background-color: rgba(238, 235, 235, 0.5);*/
+    background-color: rgba(5, 18, 95, 0.2);
+    border-radius: 0px 20px 20px 0px;
+    color: #001f3f;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 20px;
+    /*border-left: #001f3f solid 5px;*/
+ }
+/*.nav_left ul li{
+    list-style: none;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.nav_left ul a{
+    text-decoration: none;
+    color: #001f3f;
+}
+
+.nav_left ul li:hover{
+   background-color: rgba(253, 251, 251, 0.774);
+   border-radius: 0px 20px 20px 0px;
+   color: #001f3f;
+   font-weight: bold;
+   border-left: #001f3f solid 5px;
+}
+
+.nav_left ul li svg{
+    margin: 0 2px;
+    width: 14%;
+}
+.nav_left ul li.active{
+   background-color: rgba(238, 235, 235, 0.5);
+   border-radius: 0px 20px 20px 0px;
+   color: #001f3f;
+   font-weight: bold;
+   border-left: #001f3f solid 5px;
+}
+
+.nav_left ul li.active svg{
+    margin: 0px !important;
+}*/
+
+.content-header{
+    background-image: linear-gradient(to right top, #071832, #092346, #0a2f5b, #083b70, #024887);
+    height: 115px;
+    border: 1px;
+    border-radius: 0 0 5px 5px;
+}
+
+.content-header span{
+    color: #fff;
+    position: relative;
+    left: 15px;
+    top: 18px;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.content-header div#bulle div:first-child{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    position: absolute;
+    left: 90%;
+    display: inline-block;
+    top:25px
+}
+.content-header div#bulle div:last-child{
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 100px;
+    position: absolute;
+    left: 92%;
+    top: 90px;
+}
+
+#main-content{
+    position: relative;
+    width: 99%;
+    margin: 0 auto;
+
+}
+
+.main-content{
+    background-color: white;
+    box-shadow: 3px 3px 10px rgba(141, 141, 141, 0.1);
+    border-radius: 10px;
+    height: 550px;
+    width: 100%;
+    position: absolute;
+    top: -50px;
+    display: block;
+}
+
+@media only screen and (max-width: 695px) {
+    div.user_connected{
+        position: relative;
+        left: 25%;
+        width: 20%;
+        background-color: aqua;
+    }
+    
+}
+
+@media only screen and (max-width: 900px) {
+
+    main.withSidebar{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-auto-rows: minmax(123px, auto);
+        grid-gap:2px;
+        grid-template-areas: 
+        "nav_left content content content content content content content content content content content"
+        "nav_left content content content content content content content content content content content"
+        "nav_left content content content content content content content content content content content"
+        "nav_left content content content content content content content content content content content"
+        "nav_left content content content content content content content content content content content"
+        ;
+        margin: 3px 0;
+    }
+
+    .nav_left ul li svg{
+        margin: 0px !important;
+        width: 100%;
+        height: 13px;
+    }
+
+    .nav_left ul li a{
+       border-radius: 10px;
+       padding: 10px !important;
+       margin: 10px !important;
+     }
+    
+     .nav_left ul li a:hover{
+        border: 2px solid #001f3f !important;
+        border-radius: 10px;
+        color: white;
+        background-color: #001f3f !important;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+     }
+    
+    .nav_left ul li a svg{
+        margin: 0 auto;
+        width: 25px;
+    }
+    
+    .nav_left ul li.active svg{
+        margin: 0px !important;
+    }
+    
+    .nav_left ul li a.router-link-exact-active{
+        border: 2px solid #001f3f !important;
+        border-radius: 10px;
+        color: white !important;
+        background-color: #001f3f !important;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+     }
+    
+    /*.nav_left ul a.active{
+       color: white;
+    }
+
+    .nav_left ul li{
+       border-radius: 10px;
+       padding: 10px !important;
+       margin: 10px !important;
+     }
+
+     .nav_left ul li:hover{
+        border: 2px solid #001f3f !important;
+        border-radius: 10px;
+        color: white;
+        background-color: #001f3f !important;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+      }
+
+      .nav_left ul li.active{
+        border: 2px solid #001f3f !important;
+        border-radius: 10px;
+        color: white !important;
+        background-color: #001f3f !important;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+     }*/
+
+     .nav_left ul li span{
+        display: none;
+      }
+      .nav_left ul li span.show{
+        display: block;
+        position: absolute;
+        left: 80px;
+        color: black;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+        font-weight: 200;
+        padding: 7px;
+        font-size: 14px !important;
+      }
+    
+}
+
+@media only screen and (max-width:700px){
+    .nav_left ul li a{
+        border-radius: 10px;
+        padding: 10px !important;
+        margin: 5px !important;
+    }
+    .nav_left ul li span.show{
+        display: block;
+        position: absolute;
+        left: 60px;
+        color: black;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+        font-weight: 200;
+        padding: 7px;
+        font-size: 14px !important;
+      }
+}
+
+@media only screen and (max-width:600px){
+    .nav_left ul li a{
+        border-radius: 10px;
+        padding: 10px !important;
+        margin: 2px 1px !important;
+      }
+
+      .nav_left ul li span.show{
+        display: block;
+        position: absolute;
+        left: 50px;
+        color: black;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+        font-weight: 200;
+        padding: 7px;
+        font-size: 14px !important;
+      }
+}
+
+@media only screen and (max-width:500px){
+    main.withSidebar{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-auto-rows: minmax(40px, auto);
+        grid-gap:2px;
+        grid-template-areas: 
+        "nav_left nav_left nav_left nav_left nav_left nav_left nav_left nav_left nav_left nav_left nav_left nav_left"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        "content content content content content content content content content content content content"
+        ;
+        margin: 3px 0;
+    }
+
+
+    .nav_left ul li{
+        display: inline-block;
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 16%;
+     }
+
+     .nav_left ul li a{
+        text-align: center;
+     }
+
+     .nav_left ul li a svg{
+        margin: 0 auto;
+        width: 70%;
+      }
+    .nav_left ul{
+      display: block;
+     }
+
+     .togglebars_icon{
+       display: none;
+    }
+
+    .nav_left ul li span.show{
+        display: none !important;
+      }
+
+      div#title{
+        width: 100%;
+        text-align: center;
+        position: relative;
+        top: 10px;
+     }
+ 
+     #app-nav{
+         display: none;
+     }
+}
+
+@media only screen and (max-width:435px){
+    .nav_left ul{
+        margin: 2px auto;
+        width: 100%;
+      }
+
+    footer ul{
+       display: none;
+    } 
+
+    footer::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
+    footer #copyright-info{
+        width: 100% !important;
+        left: 0% !important;
+        margin: 30px auto 15px auto;
+    }
+    
+}
+
+@media only screen and (max-width:400px){
+    .nav_left ul{
+        margin: 2px auto;
+        width: 100%;
+      }
+}
+@media only screen and (max-width:305px){
+    .nav_left ul{
+        margin: 2px auto;
+        width: 100%;
+      }
+}
+
+
+
